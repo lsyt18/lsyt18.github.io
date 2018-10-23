@@ -34,11 +34,8 @@ c = function() {
 }, 1000);
 c();
   </script>
-</body>
-<body translate="no" >
-  <div id="output"></div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+Environment.NewLine;
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
   <script>
 // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 var urlParams;
@@ -58,7 +55,7 @@ if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyS
 var c;
 setInterval(
 c = function() {
-    output.innerText = moment().zone("+1000").format(urlParams["format"] || '');
+    output.innerText = moment().zone("+1100").format(urlParams["format"] || '');
 }, 1000);
 c();
   </script>
